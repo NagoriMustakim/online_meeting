@@ -1,0 +1,1685 @@
+/* Home Page Css Start ------------- */
+
+.home-banner-section {
+  padding: 10rem 0;
+  background: url(../images/banner-bg.png) no-repeat top 2.5rem center/contain;
+  .banner-content {
+    max-width: 562px;
+    p {
+      font-size: 2.2rem;
+      margin: 1.2rem 0 1.8rem;
+    }
+    .btn {
+      padding: 1rem 2.2rem;
+    }
+  }
+  .logos-section {
+    padding: 4.8rem 0;
+    background-color: #ffffff;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.advantages-section {
+  position: relative;
+  padding: 7rem 0;
+  .LineCurve {
+    position: absolute;
+    left: 0;
+    top: 28%;
+  }
+}
+
+.block-design {
+  background-image: url("data:image/svg+xml,%3Csvg width='307' height='269' viewBox='0 0 307 269' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 87.7384C0 78.1793 5.451 69.4569 14.0432 65.2674L141.481 3.12928C148.146 -0.120979 155.911 -0.244019 162.677 2.79341L292.239 60.9618C301.221 64.9943 307 73.9231 307 83.7687V244C307 257.807 295.807 269 282 269H25C11.1929 269 0 257.807 0 244L0 87.7384Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  text-align: center;
+  padding: 6.5rem 2.6rem 3.5rem;
+  position: relative;
+  max-width: 307px;
+  margin: 10.4rem auto 3.2rem;
+  border-radius: 3.5rem;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0 0 4rem 4rem;
+  }
+  .icon {
+    width: 8.8rem;
+    height: 8.8rem;
+    padding: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -4.4rem;
+    transform: translate(-50%, 0);
+  }
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  .text-link {
+    margin-top: 2.3rem;
+    display: inline-block;
+  }
+}
+
+.custom-tab-design {
+  padding-top: 3rem;
+  .nav-pills {
+    max-width: 15.3rem;
+    .nav-item {
+      .nav-link {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #171e26;
+        background-color: #fff;
+        box-shadow: 4px 4px 16px rgb(0 0 0 / 6%);
+        padding: 1rem 2rem;
+        &.active {
+          background-color: #ff6d00;
+          color: #ffffff;
+        }
+        .show {
+          > .nav-link {
+            background-color: #ff6d00;
+            color: #ffffff;
+          }
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .tab-image-section {
+    position: relative;
+    margin-left: 7.5rem;
+    width: 50%;
+    &::after {
+      content: "";
+      width: 17.7rem;
+      height: 17.7rem;
+      border-radius: 100%;
+      background-color: #fff6f0;
+      position: absolute;
+      right: -5rem;
+      top: -10rem;
+      z-index: -1;
+    }
+    &::before {
+      content: "";
+      width: 20rem;
+      height: 14rem;
+      background-color: #fecf25;
+      position: absolute;
+      left: -3.3rem;
+      bottom: -3.3rem;
+      z-index: -1;
+    }
+    img {
+      box-shadow: 12px 4px 41px rgb(0 0 0 / 18%);
+    }
+    .dots {
+      box-shadow: none;
+      position: absolute;
+      right: 1rem;
+      bottom: -1.8rem;
+      z-index: -1;
+    }
+  }
+  .tab-content-section {
+    width: calc(100% - 50% - 7.5rem);
+    max-width: 390px;
+    margin-left: auto;
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin: 0;
+      line-height: 1.8;
+      & + p {
+        margin-top: 3rem;
+      }
+    }
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+  .tab-content {
+    > .active {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.about-section {
+  position: relative;
+  padding-bottom: 11.7rem;
+  .home-about-image {
+    position: relative;
+    img {
+      position: relative;
+      z-index: 1;
+    }
+    .circle-icon {
+      position: absolute;
+      left: -8.5rem;
+      bottom: 9rem;
+      z-index: 0;
+    }
+    .dots-yellow {
+      position: absolute;
+      right: 3.8rem;
+      top: -3.2rem;
+      z-index: 2;
+    }
+  }
+  .our-mission-box {
+    background-color: #ffffff;
+    padding: 3rem 4.5rem 4rem;
+    box-shadow: 0 4px 88px rgb(0 0 0 / 6%);
+    max-width: 545px;
+    position: absolute;
+    left: -6rem;
+    bottom: -5.4rem;
+    z-index: 1;
+    small {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+    h2 {
+      font-size: 3.3rem;
+      font-weight: 700;
+      font-style: italic;
+      background: linear-gradient(270.45deg, #cf1921 3.72%, #ff6d00 97.42%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+  }
+}
+
+.trusted-partners-section {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+  }
+}
+
+.full-width-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.testimonails-left-section {
+  position: relative;
+  .client-image {
+    position: relative;
+    width: fit-content;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    span {
+      width: 20rem;
+      height: 14rem;
+      display: block;
+      position: absolute;
+      right: -6rem;
+      top: -7rem;
+      background-color: #fecf25;
+      z-index: -1;
+    }
+    .dots-yellow {
+      position: absolute;
+      bottom: -2.5rem;
+      right: -3.5rem;
+      z-index: -1;
+    }
+    .quote-icon {
+      width: 7rem;
+      height: 7rem;
+      background-color: #ff6d00;
+      border-radius: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      right: -3.5rem;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.testimonails-right-section {
+  .client-feedback-detail {
+    .quote {
+      color: #171e26;
+      margin-bottom: 4rem;
+    }
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      max-width: 338px;
+      line-height: 150%;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 180%;
+      margin: 0;
+      & + p {
+        margin-top: 2rem;
+      }
+    }
+    .stars {
+      margin-top: 3rem;
+      color: #fecf25;
+      display: flex;
+      column-gap: 5px;
+    }
+    .client-name {
+      margin-top: 2rem;
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.6rem;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+}
+
+.testimonail-section {
+  padding: 10rem 0 8rem;
+  .static-text {
+    position: relative;
+    top: -3rem;
+    left: 10rem;
+    font-family: "Montserrat", sans-serif;
+    z-index: 0;
+    width: fit-content;
+  }
+}
+
+/* Home Page Css End ================= */
+
+/* Pricing Page CSS Start ---------------- */
+
+.toggle-switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  > span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    &.active {
+      font-weight: 700;
+    }
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 7.7rem;
+    height: 4rem;
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      &:checked + .slider {
+        background: linear-gradient(#ff9749 0%, #ff6d00 100%);
+      }
+      &:focus + .slider {
+        box-shadow: 0 0 1px #ff6d00;
+      }
+      &:checked + .slider:before {
+        -webkit-transform: translateX(37px);
+        -ms-transform: translateX(37px);
+        transform: translateX(37px);
+      }
+    }
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d1d1d1;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 30px;
+      width: 30px;
+      left: 5px;
+      bottom: 5px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+}
+
+.pricing-plan-section {
+  max-width: 814px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  .plan-box {
+    padding: 3.5rem 3rem;
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #ff6d00;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      span {
+        font-weight: 400;
+        color: #736d83;
+      }
+    }
+    .btn {
+      min-width: 15rem;
+    }
+    ul {
+      margin: 2rem 0 0;
+      list-style: none;
+      padding: 0;
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        color: #736d83;
+        padding-left: 2.7rem;
+        position: relative;
+        line-height: 1.8;
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 10px;
+          content: "";
+          background: url('data:image/svg+xml,<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.83L4.83 8.66L12.5035 1" stroke="%23FF6D00" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>')
+            no-repeat;
+          width: 14px;
+          height: 10px;
+        }
+        b {
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: #171e26;
+          margin-right: 7px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &.premium-plan {
+      box-shadow: 0px 4px 88px 0px #0000000f;
+      background: #ffffff;
+      .sale-para {
+        min-height: 24px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #8b8f93;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/* Pricing Page CSS End ================ */
+
+/* SignIn page css Start -----------------------*/
+
+.login-detail {
+  padding: 0 2rem;
+}
+
+.white-box {
+  box-shadow: 0px 4px 88px 0px #0000000f;
+  background-color: #ffffff;
+  padding: 9.3rem 5.5rem;
+  max-width: 73.1rem;
+  margin: 0 auto;
+  &.overlay-banner {
+    margin-top: -7rem;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.buttons-auth {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .btn {
+    width: calc(100% / 2 - 0.9rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.4rem 3rem;
+  }
+}
+
+.login-signup-para {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #736d83;
+  margin-top: 2rem;
+  a {
+    color: #ff6d00;
+  }
+}
+
+/* SignIn page css End ================ */
+
+/* Scan page css Start ------------*/
+
+.scan-page {
+  padding: 0 2rem;
+  .white-box {
+    padding: 7.5rem 10.2rem 4.2rem;
+    &.overlay-banner {
+      margin-top: -11rem;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #736d83;
+      margin: 3rem 0 0;
+      text-align: center;
+      line-height: 1.8;
+    }
+  }
+}
+
+/* Scan page css End ================ */
+
+/* Download page css Start ================ */
+
+.download-block {
+  margin-bottom: 7.4rem;
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2.2rem;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.buttons-downloads {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+  .btn {
+    padding: 0.5rem 2.8rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Download page css End ================ */
+
+/* Profile page css Start ================ */
+
+.profile-page {
+  margin-top: -27rem;
+  position: relative;
+  z-index: 1;
+  .white-box {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 8rem 5.5rem 4.7rem;
+  }
+  .profile-description {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 4rem;
+    padding-bottom: 6.4rem;
+    border-bottom: 1px solid rgba(183, 192, 204, 0.3);
+    .edit-profile-image {
+      position: relative;
+      width: 21.4rem;
+      height: 21.4rem;
+      overflow: hidden;
+      object-fit: cover;
+      .camera-icon {
+        background-color: #ff6d00;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 100%;
+        border: 2px solid #f2f2f2;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        bottom: 1.8rem;
+      }
+    }
+    .detail-pr {
+      width: calc(100% - 26.4rem);
+      .user-name {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        h2 {
+          font-size: 3.6rem;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      .user-contact-details {
+        display: flex;
+        gap: 2.5rem;
+        margin-bottom: 2rem;
+        p {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          gap: 1rem;
+          font-size: 1.6rem;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+      p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin: 0;
+        line-height: 1.8;
+      }
+    }
+  }
+  .personal-details {
+    position: relative;
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .personal-details-row {
+      display: flex;
+      gap: 2rem;
+      &:not(:last-child) {
+        margin-bottom: 3.2rem;
+      }
+      label {
+        width: 25%;
+        color: #736d83;
+        font-family: "Montserrat", sans-serif;
+      }
+      p {
+        margin: 0;
+        width: calc(100% - 25% - 2rem);
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+}
+
+/* Profile page css End ================ */
+
+/* Meetings page css Start ================ */
+
+.meetings-banner {
+  padding-top: 4.5rem;
+}
+
+.meetings-carss-section {
+  margin-top: -22rem;
+  position: relative;
+  z-index: 1;
+}
+
+.meetings-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 88px 0px #0000000f;
+  padding: 6rem 6rem 4.5rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .meetings-time {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ff6d00;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #736d83;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    line-height: 2;
+    a {
+      color: #ff6d00;
+      text-decoration: none;
+    }
+  }
+  .meetings-detail {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(183, 192, 204, 0.3);
+    label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #736d83;
+      text-transform: uppercase;
+    }
+    .profile-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        margin: 0;
+        width: 31px;
+        height: 31px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 100%;
+      }
+      span,
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+    .meeting-attend-profile {
+      display: flex;
+      gap: 5px;
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        overflow: hidden;
+        object-fit: cover;
+      }
+      span {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        overflow: hidden;
+        background: #ffeada66;
+        color: #ff6d00;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* Meetings page css End ================ */
+
+/* Meetings Detail page css start ================ */
+
+.meetings-detail-banner {
+  padding-top: 4rem;
+  .small-title {
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+}
+
+.meetings-detail-section {
+  margin-top: -21rem;
+  position: relative;
+  .meetings-card {
+    padding: 0;
+    .meeting-detail-message {
+      padding: 4rem 10rem 3rem;
+    }
+    .meetings-message-thread {
+      border-top: 1px solid rgba(183, 192, 204, 0.3);
+      border-bottom: 1px solid rgba(183, 192, 204, 0.3);
+      padding: 3rem 10rem 3rem;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 2rem;
+          &:not(:last-child) {
+            margin-bottom: 2.5rem;
+          }
+          .profile-icon {
+            width: 5.7rem;
+            height: 5.7rem;
+            border-radius: 100%;
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .message-profile-detail {
+            width: calc(100% - 7.7rem);
+            .name-date-time {
+              display: flex;
+              align-items: center;
+              column-gap: 1rem;
+              margin-bottom: 0.7rem;
+              h3 {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #736d83;
+                margin: 0;
+                line-height: 18px;
+              }
+              span {
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                color: #736d83;
+              }
+            }
+            p {
+              font-family: "Montserrat", sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .meetings-detail {
+      border: none;
+      padding: 3rem 10rem;
+      margin-top: 0;
+    }
+  }
+}
+
+/* Meetings Detail page css End ================ */
+
+/* About Us page css Start ================ */
+
+.zatahub-team-section {
+  padding: 5rem 0;
+  overflow: hidden;
+  .container {
+    position: relative;
+  }
+  .zatahub-team-circle-icon {
+    position: absolute;
+    top: -1rem;
+    right: -5rem;
+    z-index: 0;
+  }
+  .zatahub-team-dots-yellow {
+    position: absolute;
+    top: 48%;
+    left: -3.7rem;
+    z-index: 0;
+  }
+  .team-slider {
+    .swiper-pagination {
+      display: block;
+      .swiper-pagination-bullet {
+        background-color: #736d83;
+        opacity: 0.21;
+        width: 1.5rem;
+        height: 1.5rem;
+        &.swiper-pagination-bullet-active {
+          opacity: 1;
+          width: 4rem;
+          border-radius: 2.5rem;
+        }
+      }
+    }
+    .team-block {
+      .profile-image {
+        width: 100%;
+        height: unset;
+        border-radius: 0;
+        overflow: unset;
+        a {
+          bottom: -6rem;
+          right: 0;
+          left: unset;
+          transform: unset;
+          color: #0a66c2;
+          display: block;
+          z-index: 1;
+        }
+      }
+      .team-detail {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.team-block {
+  padding: 0 8px;
+  margin: 5rem 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  .profile-image {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    &:before {
+      content: "";
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    > img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: top center;
+      margin: 0 auto;
+    }
+    a {
+      position: absolute;
+      left: 50%;
+      bottom: 2.5rem;
+      transform: translate(-50%, 0);
+      display: none;
+      transition: 0.3s;
+      color: #fff;
+    }
+    &:hover {
+      &:before {
+        opacity: 0.5;
+      }
+      a {
+        display: block;
+      }
+    }
+  }
+  .team-detail {
+    position: relative;
+    padding-right: 4rem;
+    margin-top: 2rem;
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #736d83;
+      margin: 0;
+      text-transform: capitalize;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.7;
+      color: #171e26;
+      margin: 0;
+      text-transform: capitalize;
+    }
+    a {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+/* About Us page css End ================ */
+
+/* Privacy policy page css Start ================ */
+
+.privacy-section-banner {
+  padding-top: 4rem;
+  .small-title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 0.5;
+  }
+}
+
+.privacy-policy-section {
+  margin-top: -22rem;
+  position: relative;
+  .privacy-policy-card {
+    ol {
+      list-style-type: 1;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.5;
+      li {
+        margin-left: -1.8rem;
+
+        flex-wrap: wrap;
+        color: #736d83;
+        column-gap: 2rem;
+        font-family: "Montserrat";
+        &:not(:last-child) {
+          /* margin-bottom: 2.5rem; */
+        }
+        .profile-icon {
+          width: 5.7rem;
+          height: 5.7rem;
+          border-radius: 100%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        p {
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 2;
+          color: #171e26;
+        }
+      }
+      ul {
+        margin-top: 0.625rem;
+        margin-bottom: 2.5rem;
+        list-style-type: disc;
+        li {
+          color: #171e26;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.privacy-policy-introduction {
+  margin-left: -24px;
+}
+
+.terms-of-service-introduction {
+  margin-left: -43px;
+}
+
+.privacy-policy-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 88px 0px #0000000f;
+  padding: 6rem 6rem 4.5rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Privacy policy page css End ================ */
+
+/* Responsive css */
+
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+  .home-banner-section {
+    padding: 5rem 0;
+    .banner-content {
+      p {
+        font-size: 1.6rem;
+      }
+      .btn {
+        padding: 1.1rem 3rem;
+      }
+    }
+    .logos-section {
+      padding-bottom: 0;
+      .logo-item {
+        img {
+          max-height: 4.8rem;
+        }
+      }
+    }
+  }
+  .advantages-section {
+    .LineCurve {
+      top: 13%;
+      max-height: 3.2rem;
+    }
+  }
+  .custom-tab-design {
+    padding-top: 0;
+    .nav-pills {
+      flex-direction: row !important;
+      width: 100%;
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      justify-content: center;
+      column-gap: 4rem;
+      margin-bottom: 6rem;
+      .nav-item {
+        .nav-link {
+          font-size: 1.4rem;
+          padding: 1rem;
+          min-width: 10.8rem;
+        }
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .tab-image-section {
+      margin-left: 3rem;
+      display: flex;
+      align-items: flex-end;
+      width: 40%;
+      &::after {
+        width: 11.9rem;
+        height: 11.9rem;
+        top: unset;
+        bottom: 16rem;
+      }
+      &::before {
+        width: 13.4rem;
+        height: 9.5rem;
+      }
+      .dots {
+        right: -4rem;
+      }
+    }
+    .tab-content-section {
+      width: calc(60% - 9.5rem);
+    }
+  }
+  .about-section {
+    padding-bottom: 5rem;
+    .section-title {
+      text-align: left;
+      margin: 0;
+    }
+    .our-mission-box {
+      padding: 1.7rem 2.3rem;
+      max-width: 283px;
+      left: -4.36rem;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .home-about-image {
+      margin-left: 8rem;
+      .circle-icon {
+        max-width: 8.5rem;
+        left: -5.5rem;
+        bottom: 5rem;
+      }
+    }
+  }
+  .trusted-partners-section {
+    ul {
+      justify-content: center;
+      li {
+        img {
+          max-height: 8.8rem;
+          max-width: 13.5rem;
+        }
+      }
+    }
+  }
+  .testimonails-left-section {
+    .client-image {
+      img {
+        max-height: 24rem;
+      }
+      span {
+        width: 14rem;
+        height: 10rem;
+        right: -4rem;
+        top: -4.5rem;
+      }
+    }
+  }
+  .testimonails-right-section {
+    padding-left: 1.5rem;
+    .client-feedback-detail {
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .testimonail-section {
+    padding: 5rem 0 2rem;
+    .static-text {
+      top: -8rem;
+    }
+  }
+  .toggle-switch-btn {
+    > span {
+      font-size: 1.6rem;
+    }
+  }
+  .pricing-plan-section {
+    .plan-box {
+      padding: 2rem 3rem 5rem;
+    }
+  }
+  .profile-page {
+    margin-top: -22rem;
+    .profile-description {
+      flex-direction: column;
+      padding-bottom: 5.4rem;
+      margin-bottom: 3rem;
+      gap: 2rem;
+      .edit-profile-image {
+        width: 11.4rem;
+        height: 11.4rem;
+      }
+      .detail-pr {
+        width: 100%;
+        text-align: center;
+        p {
+          font-size: 1.6rem;
+        }
+        .user-contact-details {
+          justify-content: center;
+          margin-bottom: 3rem;
+        }
+        .user-name {
+          justify-content: center;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    .white-box {
+      padding: 5rem;
+    }
+    .personal-details {
+      h3 {
+        font-size: 2rem;
+      }
+      .personal-details-row {
+        label {
+          font-size: 1.4rem;
+          width: 60%;
+        }
+        p {
+          width: 40%;
+          font-size: 1.4rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  .white-box {
+    padding: 5rem;
+    max-width: 100%;
+    &.overlay-banner {
+      margin-top: -7rem;
+    }
+  }
+  .buttons-auth {
+    flex-direction: column;
+    gap: 2rem;
+    .btn {
+      min-width: 36rem;
+      font-size: 1.5rem;
+      padding: 1.25rem 3rem;
+    }
+    .btn + .btn {
+      margin-left: 0;
+    }
+  }
+  .login-detail {
+    padding: 0 3rem;
+  }
+  .login-signup-para {
+    margin-top: 3rem;
+  }
+  .scan-page {
+    padding: 0 3rem;
+    .white-box {
+      form {
+        max-width: 362px;
+        margin: 0 auto;
+      }
+      p {
+        max-width: 362px;
+        margin: 3rem auto 0;
+      }
+    }
+  }
+
+  .download-banner-section {
+    display: flex;
+    align-items: center;
+  }
+  .buttons-downloads {
+    .btn {
+      font-size: 1.6rem;
+    }
+  }
+  .download-block {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .meetings-card {
+    padding: 3rem;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .meetings-detail-banner {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .meetings-detail-section {
+    margin-top: -14rem;
+    .meetings-card {
+      .meeting-detail-message {
+        padding: 3rem;
+      }
+      .meetings-message-thread {
+        padding: 3rem;
+      }
+      .meetings-detail {
+        padding: 3rem;
+      }
+    }
+  }
+  .about-us-page {
+    .section-title {
+      h2 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .team-block {
+    .team-detail {
+      h3,
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .zatahub-team-section {
+    padding: 2rem 0;
+    .zatahub-team-circle-icon {
+      top: 1rem;
+      right: 5rem;
+      max-width: 9.8rem;
+    }
+    .zatahub-team-dots-yellow {
+      top: 50%;
+      left: 6px;
+      max-width: 4.7rem;
+    }
+  }
+  .team-block {
+    margin: 3rem 0;
+    .profile-image {
+      width: 260px;
+      height: 260px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .profile-page {
+    .profile-description {
+      .detail-pr {
+        .user-name {
+          h2 {
+            font-size: 2.4rem;
+          }
+        }
+        .user-contact-details {
+          p {
+            font-size: 14px;
+          }
+        }
+        .user-contact-details {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .zatahub-team-section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .mt30 {
+    margin-top: 3rem;
+  }
+  .home-banner-section {
+    .logos-section {
+      padding: 4rem 1rem 0;
+      gap: 2rem;
+      .logo-item {
+        img {
+          max-height: fit-content;
+        }
+      }
+    }
+  }
+  .advantages-section {
+    .LineCurve {
+      top: 6%;
+      max-height: 1.9rem;
+    }
+  }
+  .block-design {
+    margin: 7.4rem auto 0rem;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  .custom-tab-design {
+    .nav-pills {
+      column-gap: 1rem;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow: auto;
+      padding-bottom: 2rem;
+      margin-bottom: 8rem;
+    }
+    .tab-image-section {
+      width: 100%;
+      img {
+        max-width: 330px;
+      }
+      &::before {
+        width: 14.4rem;
+        height: 10.2rem;
+      }
+      &::after {
+        width: 12.8rem;
+        height: 12.8rem;
+        right: 0;
+      }
+      .dots {
+        max-height: 4.6rem;
+        right: 3rem;
+      }
+    }
+    .tab-content-section {
+      width: 100%;
+      margin-top: 6rem;
+      max-width: 100%;
+    }
+  }
+  .about-section {
+    padding-bottom: 9rem;
+    overflow: hidden;
+    .section-title {
+      text-align: center;
+    }
+    .home-about-image {
+      margin-left: 5rem;
+      .dots-yellow {
+        max-width: 3.8rem;
+        right: 2.3rem;
+        top: -1.5rem;
+      }
+    }
+    .our-mission-box {
+      max-width: 328px;
+      bottom: -4rem;
+      small {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .trusted-partners-section {
+    ul {
+      flex-wrap: wrap;
+      column-gap: 3rem;
+      row-gap: 2.5rem;
+    }
+  }
+  .testimonails-right-section {
+    padding: 0;
+    .client-feedback-detail {
+      h3 {
+        max-width: 100%;
+      }
+    }
+  }
+  .testimonail-section {
+    .static-text {
+      top: -2.5rem;
+      left: 9rem;
+      font-size: 14px;
+    }
+  }
+  .testimonails-left-section {
+    .client-image {
+      margin-right: 4.5rem;
+      .quote-icon {
+        width: 5.3rem;
+        height: 5.3rem;
+        right: -2.5rem;
+      }
+      .dots-yellow {
+        width: 6rem;
+        height: 4.8rem;
+        right: -3rem;
+      }
+    }
+  }
+  .toggle-switch-btn {
+    .switch {
+      height: 3.5rem;
+      width: 7rem;
+    }
+    .slider {
+      &:before {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+    input:checked + .slider:before {
+      transform: translateX(30px);
+    }
+  }
+  .pricing-plan-section {
+    .plan-box {
+      padding: 2rem 2rem 5rem;
+    }
+  }
+  .profile-page {
+    .white-box {
+      padding: 5rem 3rem;
+    }
+  }
+  .profile-page {
+    .personal-details {
+      .btn {
+        padding: 0.6rem 1.8rem;
+      }
+    }
+  }
+  .white-box {
+    padding: 5rem 3rem;
+  }
+  .scan-page {
+    .white-box {
+      padding: 5rem 3rem;
+      &.overlay-banner {
+        margin-top: -7rem;
+      }
+    }
+  }
+  .download-banner-section {
+    align-items: flex-start;
+  }
+  .buttons-downloads {
+    column-gap: 1rem;
+    .btn {
+      min-width: 20.3rem;
+      font-weight: 500;
+    }
+    .btn + .btn {
+      margin-left: 0;
+    }
+  }
+  .meetings-carss-section {
+    margin-top: -14rem;
+  }
+  .mmt-3 {
+    margin-top: 3rem;
+  }
+  .mmt-5 {
+    margin-top: 5rem;
+  }
+  .meetings-detail-section {
+    margin-top: -4rem;
+    .meetings-card {
+      .meetings-message-thread {
+        ul {
+          li {
+            .message-profile-detail {
+              .name-date-time {
+                h3 {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+            &:not(:last-child) {
+              margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .meetings-detail-banner {
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+  .zatahub-team-section {
+    .zatahub-team-circle-icon {
+      top: 17%;
+      display: none;
+    }
+    .zatahub-team-dots-yellow {
+      top: 43.5%;
+      display: none;
+    }
+    .team-block {
+      margin-top: 0;
+    }
+  }
+}
