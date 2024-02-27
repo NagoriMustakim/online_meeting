@@ -2,9 +2,8 @@ import React from "react";
 import { Container, Row, Col, Image, Nav, Tab } from "react-bootstrap";
 import InnerBanner from "views/Components/Comman/InnerBanner";
 import { Link } from "react-router-dom";
-import WindowsDownload from "assets/images/icons/windows-download.svg";
-import DownloadMacAppStore from "assets/images/icons/download-app-store-mac.svg";
 import GooglePlayStore from "assets/images/icons/google-play-store.svg";
+import githubBtn from "assets/images/icons/btn_github.svg";
 
 import Layout from "../Layout";
 
@@ -19,7 +18,7 @@ const Download = () => {
               <div className="download-block">
                 <h2>Windows 10/11</h2>
                 <div className="buttons-downloads">
-                  <Link to="/" className="btn">
+                  <Link to="https://github.com/zatahub/zatahub-windows/releases/download/v1.0.0/zatahub-windows-v1.0.0.zip" className="btn">
                     <span>
                       <svg
                         width="24"
@@ -39,8 +38,8 @@ const Download = () => {
                     </span>
                     Download
                   </Link>
-                  <Link to="/">
-                    <Image src={WindowsDownload} alt="Windows Store" />
+                  <Link to="https://github.com/zatahub/zatahub-windows/releases">
+                    <Image src={githubBtn} alt="Windows Store" />
                   </Link>
                 </div>
                 <p>Supporting Windows 10/11</p>
@@ -50,7 +49,7 @@ const Download = () => {
               <div className="download-block">
                 <h2>MacOS</h2>
                 <div className="buttons-downloads">
-                  <Link to="/" className="btn">
+                  <Link to="https://github.com/zatahub/zatahub-macos/releases/download/v1.0.0/ZataHub-macos-v1.0.0.zip" className="btn">
                     <span>
                       <svg
                         width="24"
@@ -70,10 +69,10 @@ const Download = () => {
                     </span>
                     Download
                   </Link>
-                  <Link to="/">
-                    <Image
-                      src={DownloadMacAppStore}
-                      alt="MacOS Download App Store"
+                  <Link to="https://github.com/zatahub/zatahub-macos/releases">
+                    <Image 
+                      src={githubBtn}
+                      alt="MacOS Download App Store"                      
                     />
                   </Link>
                 </div>
