@@ -18,7 +18,7 @@ const Download = () => {
               <div className="download-block">
                 <h2>Windows 10/11</h2>
                 <div className="buttons-downloads">
-                  <Link to="https://github.com/zatahub/zatahub-windows/releases/download/v1.0.0/zatahub-windows-v1.0.0.zip" className="btn">
+                  <Link to="https://github.com/zatahub/zatahub-windows/releases/download/v1.0.0/zatahub-windows-v1.0.0.zip"className="btn">
                     <span>
                       <svg
                         width="24"
@@ -38,7 +38,7 @@ const Download = () => {
                     </span>
                     Download
                   </Link>
-                  <Link to="https://github.com/zatahub/zatahub-windows/releases">
+                  <Link to="https://github.com/zatahub/zatahub-windows/releases"  target="_blank">
                     <Image src={githubBtn} alt="Windows Store" />
                   </Link>
                 </div>
@@ -69,7 +69,7 @@ const Download = () => {
                     </span>
                     Download
                   </Link>
-                  <Link to="https://github.com/zatahub/zatahub-macos/releases">
+                  <Link to="https://github.com/zatahub/zatahub-macos/releases"  target="_blank">
                     <Image 
                       src={githubBtn}
                       alt="MacOS Download App Store"                      
@@ -104,7 +104,7 @@ const Download = () => {
                     Download
                   </Link>
                 </div>
-                <p>Expected to release in March 2024</p>
+                <p>Expected to release in August 2024</p>
               </div>
             </Col>
             <Col lg="4" md="6">
@@ -137,10 +137,10 @@ const Download = () => {
                 </div>
                 <Row>
                   <Col md="6">
-                    <p>Expected to release by end of January 2024</p>
+                    <p>Expected to release by end of June 2024</p>
                   </Col>
                   <Col md="6">
-                    <p>Expected to release by end of December 2023</p>
+                    <p>Expected to release by end of June 2024</p>
                   </Col>
                 </Row>
               </div>

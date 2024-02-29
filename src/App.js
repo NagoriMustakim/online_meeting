@@ -19,6 +19,7 @@ import MeetingsDetailPage from "./views/Client/MeetingsDetail";
 import AboutUsPage from "./views/Client/AboutUs";
 import PrivacyPolicy from "views/Client/PrivacyPolicy/index";
 import TermsOfService from "views/Client/TermsOfService/index";
+import LaunchMeeting from "views/Client/LaunchMeeting/index";
 
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
@@ -55,6 +56,7 @@ const App = () => {
                 <Route path="/about-us" element={<AboutUsPage />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/temps-of-service" element={<TermsOfService />} />
+                <Route path="/j/:meeting_id" element={<LaunchMeeting />} />
               </>
             ) : (
               <>
@@ -72,6 +74,7 @@ const App = () => {
                 <Route path="/about-us" element={<AboutUsPage />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/temps-of-service" element={<TermsOfService />} />
+                <Route path="/j/:meeting_id" element={<LaunchMeeting />} />
               </>
             )}
           </Route>

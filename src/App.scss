@@ -481,3 +481,49 @@ form {
     }
   }
 }
+
+
+.launch-page {
+  margin: -7.4rem 9% 0
+}
+
+.launch-page .launch-meeting-section {
+  align-items: center;
+  color: #736d83;
+  justify-content: center;
+  padding: 10% 20%;
+  text-align: center
+}
+
+.launch-page .launch-meeting-section h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5
+}
+
+.launch-page .launch-meeting-section b {
+  color: #000;
+  font-weight: 700
+}
+
+.launch-page .launch-meeting-section span {
+  font-weight: 300
+}
+
+.launch-page .launch-meeting-section span b {
+  color: #ff6d00
+}
+
+.launch-page .launch-meeting-section .download-zata-card {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  color: #000;
+  margin: 50px 25%;
+  padding: 50px
+}
+
+.launch-page .launch-meeting-section .download-zata-card .link-download-now {
+  color: #ff6d00;
+  display: block;
+  font-weight: 600
+}
