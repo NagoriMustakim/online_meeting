@@ -34,6 +34,9 @@ const LaunchMeeting = () => {
     }
   }, []);
 
+  const LaunchMeetingHandler = () => {
+    alert("ZataHub is not yet installed on your computer.")
+  }
   return (
     <React.Fragment>
       <div className="main-layout">
@@ -49,7 +52,7 @@ const LaunchMeeting = () => {
               </span>
             </h2>
 
-            <Button className="justify-content-center mt-5">
+            <Button className="justify-content-center mt-5" onClick={LaunchMeetingHandler}>
               Launch Meeting
             </Button>
 
