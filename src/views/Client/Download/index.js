@@ -18,7 +18,7 @@ const Download = () => {
               <div className="download-block">
                 <h2>Windows 10/11</h2>
                 <div className="buttons-downloads">
-                  <Link to="https://github.com/zatahub/zatahub-windows/releases/download/v1.0.0/zatahub-windows-v1.0.0.zip"className="btn">
+                  <Link to="https://github.com/zatahub/zatahub-windows/releases" target="_blank" className="btn">
                     <span>
                       <svg
                         width="24"
@@ -49,7 +49,7 @@ const Download = () => {
               <div className="download-block">
                 <h2>MacOS</h2>
                 <div className="buttons-downloads">
-                  <Link to="https://github.com/zatahub/zatahub-macos/releases/download/v1.0.0/ZataHub-macos-v1.0.0.zip" className="btn">
+                  <Link to="https://github.com/zatahub/zatahub-macos/releases" target="_blank" className="btn">
                     <span>
                       <svg
                         width="24"
