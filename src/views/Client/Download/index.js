@@ -72,7 +72,7 @@ const Download = () => {
                   <Link to="https://github.com/zatahub/zatahub-macos/releases"  target="_blank">
                     <Image 
                       src={githubBtn}
-                      alt="MacOS Download App Store"                      
+                      alt="MacOS Download App Store"                  
                     />
                   </Link>
                 </div>

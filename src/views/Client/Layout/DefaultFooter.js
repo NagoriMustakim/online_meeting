@@ -59,7 +59,7 @@ const DefaultFooter = () => {
               <p>Follow us on</p>
               <ul>
                 <li>
-                  <Link to="/">
+                  <Link to="https://discord.gg/QGtsh4F5" target="_blank">
                     <svg
                       width="22"
                       height="18"
