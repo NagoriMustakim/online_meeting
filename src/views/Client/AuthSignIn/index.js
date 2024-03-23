@@ -42,7 +42,7 @@ const Signin = () => {
           <div className="buttons-auth">
             <button onClick={() => login()} className="btn outline-btn">
               <Image src={GoogleIcon} alt="Google" />
-              Login with Google
+              Login with Metamask
             </button>
 
             <button
