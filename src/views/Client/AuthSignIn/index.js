@@ -42,7 +42,7 @@ const Signin = () => {
           <div className="buttons-auth">
             <button onClick={() => login()} className="btn outline-btn">
               <Image src={GoogleIcon} alt="Google" />
-              Login with Metamask
+            Login with Metamask
             </button>
 
             <button
@@ -52,7 +52,7 @@ const Signin = () => {
               data-bs-target="#exampleModal"
             >
               <Image src={IosIcon} alt="Google" />
-              Login with Apple
+            Login with Trust Wallet
             </button>
 
             <div class="custom-backdrop" id="customBackdrop"></div>
