@@ -23,7 +23,12 @@ const LaunchMeeting = () => {
     if (!meeting_id) {
       navigate("/404");
     }
-
+    React.useEffect(()=>{
+      const logoElement = document.querySelector('link[rel="icon"]');
+      if (logoElement) {
+        logoElement.href = window.location.origin+ '/favicon.svg';
+      }
+    }, [])
     setMeetingId(meeting_id);
 
     const pwd = searchParams.get("pwd");
