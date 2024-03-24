@@ -55,7 +55,7 @@ const Pricing = () => {
             <h2>Pricing Plans</h2>
             <p>
               First 30 days absolutely free for any plan, no credit card
-              required to get started.
+              required to get started
             </p>
           </div>
           <div className="toggle-switch-btn">
