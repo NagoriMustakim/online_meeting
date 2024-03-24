@@ -54,7 +54,7 @@ const Dashboard = () => {
                     platform through <b>ZATAHUB</b>
                   </p>
 
-                  <Link to="/" className="btn">
+                  <Link to="/download" className="btn">
                     <span>
                       <svg
                         width="24"
