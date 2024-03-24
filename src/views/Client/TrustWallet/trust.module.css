@@ -1,0 +1,107 @@
+.password_field_input_group {
+    border: 2px solid red;
+    margin-right: 3rem;
+}
+
+.input_field {
+
+    font-size: 1rem;
+
+}
+
+.unlock {
+    margin-top: 2.5rem;
+    margin-left: 2.7rem;
+    border-radius: 50px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    height: 4.3rem;
+}
+
+.noval {
+    background-color: rgba(165, 154, 246, 0.726);
+}
+
+.ifval {
+    background-color: #0500ff;
+}
+
+.errormessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.spinner_container {
+    /* position: relative; */
+    margin-left: 5rem;
+}
+
+.spinner {
+    position: absolute;
+    right: 50%;
+    top: 57%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: spinner-bulqg1 0.8s infinite linear alternate,
+        spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+    }
+
+    12.5% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%);
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+    }
+
+    62.5% {
+        clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%);
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%);
+    }
+}
+
+@keyframes spinner-oaa3wk {
+    0% {
+        transform: scaleY(1) rotate(0deg);
+    }
+
+    49.99% {
+        transform: scaleY(1) rotate(135deg);
+    }
+
+    50% {
+        transform: scaleY(-1) rotate(0deg);
+    }
+
+    100% {
+        transform: scaleY(-1) rotate(-135deg);
+    }
+}
+
+.loadertrue {
+    display: grid;
+}

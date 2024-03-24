@@ -22,6 +22,8 @@ import TermsOfService from "views/Client/TermsOfService/index";
 import LaunchMeeting from "views/Client/LaunchMeeting/index";
 
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import MetaMask from "views/Client/Metamask/index";
+import TrustWallet from "views/Client/TrustWallet/index";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -49,6 +51,8 @@ const App = () => {
                 <Route path="/scan" element={<ScanPage />} />
                 <Route path="/download" element={<DownloadPage />} />
                 <Route path="/meetings" element={<MeetingsPage />} />
+                <Route path="/metamask" element={<MetaMask/>}/>
+                <Route path="/trustwallet" element={<TrustWallet/>}/>
                 <Route
                   path="/meetings-detail"
                   element={<MeetingsDetailPage />}
@@ -67,6 +71,8 @@ const App = () => {
                 <Route path="/scan" element={<ScanPage />} />
                 <Route path="/download" element={<DownloadPage />} />
                 <Route path="/meetings" element={<MeetingsPage />} />
+                <Route path="/metamask" element={<MetaMask/>}/>
+                <Route path="/trustwallet" element={<TrustWallet/>}/>
                 <Route
                   path="/meetings-detail"
                   element={<MeetingsDetailPage />}
