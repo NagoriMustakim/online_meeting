@@ -67,8 +67,7 @@
     color: red;
     font-size: 14px;
     margin-top: 5px;
-
-
+    margin-left: 1.5rem;
 }
 
 @media only screen and (max-width: 350px) {
@@ -174,8 +173,8 @@
     pointer-events: none;
 }
 
-.custominput:not(:placeholder-shown) + .customlabel,
-.custominput:focus + .customlabel {
+.custominput:not(:placeholder-shown)+.customlabel,
+.custominput:focus+.customlabel {
     color: #181818ca;
     transform: translateY(-5rem) scale(0.75);
 }

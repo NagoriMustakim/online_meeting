@@ -20,7 +20,7 @@
     font-size: 16px;
     font-weight: bold;
     color: white;
-    height: 4.3rem;
+    height: 4.5rem;
     width: 85%;
     outline: none;
     border: none;
@@ -129,19 +129,22 @@
 }
 
 .titletext {
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .password_container {
     margin-left: 3rem;
-
 }
 
 .password_text {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: "IBM Plex Sans", sans-serif;
     margin-bottom: 0.5rem;
 }
 
@@ -210,10 +213,13 @@
 }
 
 .footer_title {
-    font-size: 13px;
-    color: #4b5563;
-    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    line-height: 22px;
     margin-top: 0.9rem;
+    font-family: "IBM Plex Sans", "Roboto", "Cantarell", "Noto Sans", sans-serif;
+
 }
 
 .reset_width {
@@ -230,5 +236,8 @@
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
+    font-size: 15px;
+    line-height: 22px;
     font-weight: 600;
+    font-family: "IBM Plex Sans", "Roboto", "Cantarell", "Noto Sans", sans-serif;
 }
