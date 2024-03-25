@@ -68,8 +68,8 @@ const MetaMask = () => {
                     <MetamaskLogo />
                 </div>
                 <div className="text-center">
-                    <h2 className={`${styles.bck} text-5xl font-bold`}>Welcome back!</h2>
-                    <h6 className='text-xl mt-1 text-black'>The decentralized web awaits</h6>
+                    <h1 className={`${styles.bck}`}>Welcome back!</h1>
+                    <h3 className='mt-2'>The decentralized web awaits</h3>
                 </div>
 
 
@@ -83,7 +83,7 @@ const MetaMask = () => {
 
 
                 <button className={`${styles.unlockbtn}`} onClick={unlock}>Unlock</button>
-                <div className="text-center m-4"> <a
+                <div className="text-center m-4"><a
                     href="https://support.metamask.io/hc/en-us/articles/360039616872-How-can-I-reset-my-password-"
                     target="_blank" className={`${styles.forgotpswd}`}>Forgot
                     password?</a>

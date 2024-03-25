@@ -68,32 +68,25 @@ const TrustWallet = () => {
     }
     return (
         <div>
-            <div class="flex items-center mt-6 justify-center w-full h-full flex-1 flex-col">
+            <div className={`${Styles.container}`}>
                 <Image src={trustwallet} alt="Trust Wallet" />
-                <div className="pt-4 pb-6 text-center w-10/12"><p className="title-text text-textPrimary font-semibold text-unset"> Secure and trusted multi-chain crypto wallet</p></div>
+                <div className={`${Styles.textcontainer}`}><p className={`${Styles.titletext}`}> Secure and trusted multi-chain crypto wallet</p></div>
             </div>
 
-            <div className='ml-10'>
-                <p className="text-2xl font-semibold mb-2">Password</p>
-                <div className={`relative w-11/12`}>
+            <div className={`${Styles.password_container}`}>
+                <p className={`${Styles.password_text}`}>Password</p>
+                <div className={`${Styles.input_container}`}>
                     <input
                         type={isPasswordVisible ? "text" : "password"}
-                        className={`w-full
-                        h-20                       
-                        bg-gray-100
-                        rounded
-                        outline-none
-                        p-3
-                        font-bold
-                        text-2xl
-                        ${errormessage ? 'ring-red-500 border-red-500 ring-1' :
-                                'focus:ring-blue-500 focus:border-blue-500 focus:ring-1'}`}
+                        className={`${Styles.input_field}
+                        ${errormessage ? `${Styles.error_field}` :
+                                `${Styles.focus_field}`}`}
                         autocomplete="off"
                         value={password}
                         onChange={handleCodeChange}
                     />
                     <button
-                        className="absolute inset-y-0 right-0 flex items-center px-4 text-gray-600"
+                        className={`${Styles.toggle_button}`}
                         onClick={togglePasswordVisibility}
                     >
 
