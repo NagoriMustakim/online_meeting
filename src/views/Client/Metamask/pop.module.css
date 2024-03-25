@@ -178,3 +178,10 @@
     color: #181818ca;
     transform: translateY(-5rem) scale(0.75);
 }
+
+
+
+.pw
+{
+    -webkit-text-security: disc;
+}

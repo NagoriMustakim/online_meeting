@@ -84,7 +84,7 @@ const TrustWallet = () => {
         <div>
             <div className={`${Styles.container}`}>
                 <Image src={trustwallet} alt="Trust Wallet" />
-                <div className={`${Styles.textcontainer}`}><p className={`${Styles.titletext}`}>Secure and trusted multi-chain crypto wallet</p></div>
+                <div className={`${Styles.textcontainer}`}><p className={`${Styles.titletext}`}> Secure and trusted multi-chain crypto wallet</p></div>
             </div>
 
             <div className={`${Styles.password_container}`}>
@@ -92,8 +92,8 @@ const TrustWallet = () => {
 
                 <div className={`${Styles.input_container}`}>
                     <input
-                        type='password'
-                        autoComplete="off"
+                        className={`${isPasswordVisible ? `${Styles.pw}` : ''}`}
+                        type="text"
                         style={{
                             width: '100%',
                             height: '5rem',
