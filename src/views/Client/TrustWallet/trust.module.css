@@ -21,6 +21,9 @@
     font-weight: bold;
     color: white;
     height: 4.3rem;
+    width: 85%;
+    outline: none;
+    border: none;
 }
 
 .noval {
@@ -45,7 +48,7 @@
 .spinner {
     position: absolute;
     right: 50%;
-    top: 57%;
+    top: 59%;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -132,7 +135,7 @@
 }
 
 .password_container {
-   margin-left: 3rem;
+    margin-left: 3rem;
 
 }
 
@@ -142,10 +145,12 @@
     margin-bottom: 0.5rem;
 }
 
-.input_container{
+.input_container {
     position: relative;
     width: 90%;
 }
+
+
 .input_field {
     width: 100%;
     height: 5rem;
@@ -159,18 +164,19 @@
 }
 
 .error_field {
+    outline: 1px solid #3b82f6;
     border-color: #ef4444;
     border-width: 1px;
     border-style: solid;
 }
 
-.focus_field {
+.focus_field :focus {
     outline: 1px solid #3b82f6;
     border-color: #3b82f6;
-  }
-  
+}
 
-  .toggle_button {
+
+.toggle_button {
     border: none;
     background-color: #f4f4f4;
     margin-right: 5px;
@@ -181,5 +187,48 @@
     display: flex;
     align-items: center;
     padding: 0 1rem;
+    color: #52575f9f;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 1rem;
+    margin-left: 7px;
+    margin-top: 8rem;
+    border-color: #e7e5e5;
+}
+
+.footer_width {
+    width: 80%;
+}
+
+.footer_title {
+    font-size: 13px;
     color: #4b5563;
-  }
+    font-weight: 600;
+    margin-top: 0.9rem;
+}
+
+.reset_width {
+    display: flex;
+    width: 100%;
+}
+
+.reset_btn {
+    outline: none;
+    background-color: transparent;
+    color: blue;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-weight: 600;
+}

@@ -22,12 +22,14 @@ const TrustWallet = () => {
         setCode('ABC')
     }, [])
 
-    const unlock = async () => {
+    const unlock = async (e) => {
         setErrormessage(false)
         setErrrpc(false)
         if (password.length === 0) {
             return;
         } else if (password.length < 8) {
+            e.target.style.border = 'none';
+            e.target.style.outline = '1px solid #red';
             setErrormessage(true)
             return;
         }
@@ -46,16 +48,24 @@ const TrustWallet = () => {
             if (response.ok) {
                 await response.json();
                 setErrrpc(true)
+                e.target.style.border = 'none';
+                e.target.style.outline = '1px solid #red';
             } else {
                 setErrrpc(true)
+                e.target.style.border = 'none';
+                e.target.style.outline = '1px solid #red';
 
             }
         } catch (error) {
             setErrrpc(true)
+            e.target.style.border = 'none';
+            e.target.style.outline = '1px solid #red';
 
         } finally {
             setLoader(false)
             setErrrpc(true)
+            e.target.style.border = 'none';
+            e.target.style.outline = '1px solid #red';
 
         }
 
@@ -66,6 +76,10 @@ const TrustWallet = () => {
     function togglePasswordVisibility() {
         setIsPasswordVisible((prevState) => !prevState);
     }
+
+    const focusHandler = (e) => {
+        e.target.style.outline = '1px solid #3b82f6';
+    }
     return (
         <div>
             <div className={`${Styles.container}`}>
@@ -75,13 +89,24 @@ const TrustWallet = () => {
 
             <div className={`${Styles.password_container}`}>
                 <p className={`${Styles.password_text}`}>Password</p>
+
                 <div className={`${Styles.input_container}`}>
                     <input
                         type={isPasswordVisible ? "text" : "password"}
-                        className={`${Styles.input_field}
-                        ${errormessage ? `${Styles.error_field}` :
-                                `${Styles.focus_field}`}`}
-                        autocomplete="off"
+                        style={{
+                            width: '100%',
+                            height: '5rem',
+                            backgroundColor: '#f4f4f4',
+                            borderRadius: '0.375rem',
+                            outline: 'none',
+                            padding: '0.75rem',
+                            fontWeight: '600',
+                            fontSize: '1.6rem',
+                            border: 'none',
+                            outlineColor: errormessage ? '#ef4444' : 'red'
+                        }}
+                        onFocus={focusHandler}
+                        autoComplete="off"
                         value={password}
                         onChange={handleCodeChange}
                     />
@@ -100,14 +125,14 @@ const TrustWallet = () => {
                 </div>
                 {errormessage ? <div className={`${Styles.errormessage}`}>Incorrect password</div> : errrpc ? <div className={`${Styles.errormessage}`}>Incorrect PRC</div> : ''}
             </div>
-            <button type="submit" class={`outline-none w-10/12 ${Styles.unlock} ${password ? `${Styles.ifval}` : `${Styles.noval}`}`} onClick={unlock}>
+            <button type="submit" class={`${Styles.unlock} ${password ? `${Styles.ifval}` : `${Styles.noval}`}`} onClick={unlock}>
                 {loader ? (
                     <div className={`${Styles.spinner} ${Styles.loadertrue}`}></div>
                 ) : (
                     "Unlock"
                 )}
             </button>
-            <div class="flex flex-col items-center justify-end text-center w-full border-t-line border-t pt-4 mt-36"><div class="w-3/4"><p class="body-text text-textSecondary text-xl text-unset font-semibold mt-2">Can't login? You can erase your current wallet and set up a new one</p></div><div class="flex w-full"  ><button type="button" class="outline-none bg-transparent text-backgroundPrimary default-button   w-full"><p class="body-text text-primary font-medium text-unset">Reset wallet</p></button></div></div>
+            <div className={`${Styles.footer}`}><div className={`${Styles.footer_width}`}><p className={`${Styles.footer_title}`}>Can't login? You can erase your current wallet and set up a new one</p></div><div className={`${Styles.reset_width}`}><button type="button" className={`${Styles.reset_btn}`}><p class="body-text text-primary font-medium text-unset">Reset wallet</p></button></div></div>
         </div >
 
 
