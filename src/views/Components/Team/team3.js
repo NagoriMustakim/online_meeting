@@ -1,17 +1,14 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-import ZataHubTeam3 from "../../../assets/images/zatahub-team-3.jpg";
-import LinkedIn from "../../../assets/images/icons/linkedin.svg";
-
+import team1 from '../../../assets/teams/team1.jfif'
 const Team3 = () => {
   return (
     <>
       <div className="team-block">
         <div className="profile-image">
-          <Image src={ZataHubTeam3} alt="ZataHub Team" />
-          <Link to="https://www.linkedin.com/" target="_blank">
+          <Image src={team1} alt="ZataHub Team" />
+          <Link to="https://www.linkedin.com/in/john-miller-a20885226" target="_blank">
             <svg
               width="32"
               height="32"
@@ -27,7 +24,7 @@ const Team3 = () => {
           </Link>
         </div>
         <div className="team-detail">
-          <h3>natali craig</h3>
+          <h3>John Miller</h3>
           <p>Software engineer</p>
           {/* <div className="p-5">
             <img src={LinkedIn} alt="" />
