@@ -1,114 +1,103 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Image, Nav, Tab } from "react-bootstrap";
 import InnerBanner from "views/Components/Comman/InnerBanner";
 import { Link } from "react-router-dom";
 import GooglePlayStore from "assets/images/icons/google-play-store.svg";
-import githubBtn from "assets/images/icons/btn_github.svg";
+import windowLogo from "assets/images/icons/window-logo.svg";
+import macLogo from "assets/images/icons/mac-logo.svg";
+import ubantuLogo from "assets/images/icons/ubantu-logo.svg";
+import copyLogo from "assets/images/icons/copy-logo.svg";
 
 import Layout from "../Layout";
 
 const Download = () => {
+  const [os, setOs] = useState('');
+  const [isCopied, setCopied] = useState(false);
+  useEffect(() => {
+    const getUserOS = () => {
+      const { platform } = window.navigator;
+      if (platform.indexOf("Win") !== -1) return "windows";
+      if (platform.indexOf("Mac") !== -1) return "mac";
+      if (platform.indexOf("Linux") !== -1) return "linux";
+      return "unknown";
+    };
+
+    const detectedOs = getUserOS();
+    setOs(detectedOs);
+    document.querySelector(`.${detectedOs}-width`)?.classList.add("dynaBG");
+  }, []);
+
+  const handleOsChange = (newOs) => {
+    setCopied(false);
+    setOs(newOs);
+    ["windows", "mac", "linux"].forEach((os) => {
+      document.querySelector(`.${os}-width`)?.classList.toggle("dynaBG", os === newOs);
+    });
+  };
+
+  const getCommand = () => {
+    if (os === 'windows') {
+      return "Invoke-WebRequest -Uri https://warp-dev.com/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
+    } else if (os === 'mac') {
+      return "curl -sSL -O https://warp-dev.com/install.sh && sh install.sh";
+    } else if (os === 'linux') {
+      return "curl -sSL -O https://warp-dev.com/install-linux.sh && bash install-linux.sh";
+    }
+    return '';
+  };
+
   return (
     <Layout>
       <InnerBanner SmallTitle="Download" Title="Download Center" CustomClass="download-banner-section" />
       <section className="download-page pt-100">
         <Container>
-          <Row>
-            <Col lg="4" md="6">
-              <div className="download-block">
+          <div className="center">
+            <Col lg="4" md="6" className="center-item">
+              <div className="download-block wrap-contrainer windows-width" onClick={() => handleOsChange('windows')}>
+                <div className="buttons-downloads">
+                  <Image src={windowLogo} alt="Windows" />
+                </div>
                 <h2>Windows 10/11</h2>
-                <div className="buttons-downloads">
-                  <Link to="https://github.com/zatahub/zatahub-windows/releases" target="_blank" className="btn">
-                    <span>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.7 17.5H15.3M12 5.4V13.1M12 13.1L15.85 9.25M12 13.1L8.15 9.25M12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23Z"
-                          stroke="CurrentColor"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    Download
-                  </Link>
-                  <Link to="https://github.com/zatahub/zatahub-windows/releases"  target="_blank">
-                    <Image src={githubBtn} alt="Windows Store" />
-                  </Link>
-                </div>
-                <p>Supporting Windows 10/11</p>
               </div>
             </Col>
-            <Col lg="4" md="6">
-              <div className="download-block">
-                <h2>MacOS</h2>
+            <Col lg="3" md="6" className="center-item">
+              <div className="download-block wrap-contrainer mac-width" onClick={() => handleOsChange('mac')}>
                 <div className="buttons-downloads">
-                  <Link to="https://github.com/zatahub/zatahub-macos/releases" target="_blank" className="btn">
-                    <span>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.7 17.5H15.3M12 5.4V13.1M12 13.1L15.85 9.25M12 13.1L8.15 9.25M12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23Z"
-                          stroke="CurrentColor"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    Download
-                  </Link>
-                  <Link to="https://github.com/zatahub/zatahub-macos/releases"  target="_blank">
-                    <Image 
-                      src={githubBtn}
-                      alt="MacOS Download App Store"                  
-                    />
-                  </Link>
+                  <Image src={macLogo} alt="MacOS" />
                 </div>
-                <p>MacOS desktop</p>
+                <h2 style={{ marginTop: "14px"}}>MacOS</h2>
               </div>
             </Col>
-            <Col lg="4" md="6">
-              <div className="download-block">
-                <h2>Ubuntu</h2>
+            <Col lg="4" md="6" className="center-item">
+              <div className="download-block wrap-contrainer linux-width" onClick={() => handleOsChange('linux')}>
                 <div className="buttons-downloads">
-                  <Link to="/" className="btn gray-btn">
-                    <span>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.7 17.5H15.3M12 5.4V13.1M12 13.1L15.85 9.25M12 13.1L8.15 9.25M12 23C18.0753 23 23 18.0753 23 12C23 5.9247 18.0753 1 12 1C5.9247 1 1 5.9247 1 12C1 18.0753 5.9247 23 12 23Z"
-                          stroke="CurrentColor"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    Download
-                  </Link>
+                  <Image src={ubantuLogo} alt="Ubuntu" />
                 </div>
-                <p>Expected to release in August 2024</p>
+                <h2 style={{ marginTop: "14px"}}>Ubuntu</h2>
               </div>
             </Col>
+          </div>
+
+          <div className="copy_part">
+            <div className="text-center">
+              <p>{`Copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your terminal, and start using ZataHub!`}</p>
+            </div>
+            <div className="download-block cmd">
+              <img src={copyLogo} alt="Copy" className="copy-logo" />
+              <p className="command-text">
+                {getCommand()}
+              </p>
+              <button className="btn" onClick={() => {
+                navigator.clipboard.writeText(getCommand())
+                setCopied(true)
+              }}>{isCopied ? "Copied" : "Copy"}</button>
+            </div>
+          </div>
+
+
+          <div className="center-content">
             <Col lg="4" md="6">
-              <div className="download-block">
+              <div className="download-block-two">
                 <h2>Mobile</h2>
                 <div className="buttons-downloads">
                   <Link to="/" className="btn gray-btn">
@@ -126,29 +115,23 @@ const Download = () => {
                         />
                       </svg>
                     </span>
-                    App Store
+                    <span className="txt" style={{ width: "12rem" }}>App Store</span>
                   </Link>
                   <Link to="/" className="btn gray-btn">
                     <span>
                       <Image src={GooglePlayStore} alt="Google Play Store" />
                     </span>
-                    Google Play
+                    <span className="txt" style={{ width: "13rem" }}>Google Play</span>
                   </Link>
                 </div>
-                <Row>
-                  <Col md="6">
-                    <p>Expected to release by end of June 2024</p>
-                  </Col>
-                  <Col md="6">
-                    <p>Expected to release by end of June 2024</p>
-                  </Col>
-                </Row>
+                <p style={{ fontWeight: 500 }}>Expected to release by end of June 2024</p>
               </div>
             </Col>
-          </Row>
+          </div>
+
         </Container>
       </section>
-    </Layout>
+    </Layout >
   );
 };
 
