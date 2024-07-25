@@ -37,11 +37,11 @@ const Download = () => {
 
   const getCommand = () => {
     if (os === 'windows') {
-      return "Invoke-WebRequest -Uri https://warp-dev.com/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
+      return "Invoke-WebRequest -Uri https://zatahub.io/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
     } else if (os === 'mac') {
-      return "curl -sSL -O https://warp-dev.com/install.sh && sh install.sh";
+      return "curl -sSL -O https://zatahub.io/install.sh && sh install.sh";
     } else if (os === 'linux') {
-      return "curl -sSL -O https://warp-dev.com/install-linux.sh && bash install-linux.sh";
+      return "curl -sSL -O https://zatahub.io/install-linux.sh && bash install-linux.sh";
     }
     return '';
   };
@@ -65,7 +65,7 @@ const Download = () => {
                 <div className="buttons-downloads">
                   <Image src={macLogo} alt="MacOS" />
                 </div>
-                <h2 style={{ marginTop: "14px"}}>MacOS</h2>
+                <h2 style={{ marginTop: "14px" }}>MacOS</h2>
               </div>
             </Col>
             <Col lg="4" md="6" className="center-item">
@@ -73,14 +73,14 @@ const Download = () => {
                 <div className="buttons-downloads">
                   <Image src={ubantuLogo} alt="Ubuntu" />
                 </div>
-                <h2 style={{ marginTop: "14px"}}>Ubuntu</h2>
+                <h2 style={{ marginTop: "14px" }}>Ubuntu</h2>
               </div>
             </Col>
           </div>
 
           <div className="copy_part">
             <div className="text-center">
-              <p>{`Copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your terminal, and start using ZataHub!`}</p>
+              <p>{`Quick install by copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your ${os === "windows" ? "Command Prompt" : os === "mac" ? "Terminal" : "Terminal"}, and start using ZataHub!`}</p>
             </div>
             <div className="download-block cmd">
               <img src={copyLogo} alt="Copy" className="copy-logo" />
