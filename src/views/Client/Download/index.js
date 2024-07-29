@@ -124,7 +124,7 @@ const Download = () => {
                     <span className="txt" style={{ width: "13rem" }}>Google Play</span>
                   </Link>
                 </div>
-                <p style={{ fontWeight: 500 }}>Expected to release by end of June 2024</p>
+                <p style={{ fontWeight: 500 }}>Expected to release by end of September 2024</p>
               </div>
             </Col>
           </div>
