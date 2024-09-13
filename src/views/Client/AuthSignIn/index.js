@@ -13,43 +13,21 @@ import { useGoogleLogin } from "@react-oauth/google";
 const Signin = () => {
   const navigate = useNavigate();
 
-  const login = useGoogleLogin({
-    onSuccess: (tokenResponse) => {
-      fetch("https://www.googleapis.com/oauth2/v2/userinfo", {
-        headers: new Headers({
-          Authorization: "Bearer " + tokenResponse.access_token,
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          localStorage.setItem("avatar", JSON.stringify(data.picture));
-          localStorage.setItem("name", JSON.stringify(data.name));
-          localStorage.setItem("email", JSON.stringify(data.email));
-          if (data) {
-            setTimeout(() => {
-              navigate("/profile");
-            }, 500);
-          }
-        });
-    },
-  });
-
   return (
     <Layout>
       <InnerBanner SmallTitle="Login" Title="Login in to your <br /> account" />
       <section className="login-detail">
         <div className="white-box overlay-banner">
           <div className="buttons-auth">
-            <button onClick={() => login()} className="btn outline-btn">
+            <button onClick={() => { alert("Please download the app and then sign in through the app") }} className="btn outline-btn">
               <Image src={GoogleIcon} alt="Google" />
               Login with Google
             </button>
 
             <button
               className="btn outline-btn"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              type="button"              
+              onClick={() => { alert("Please download the app and then sign in through the app") }}
             >
               <Image src={IosIcon} alt="Google" />
               Login with Apple
@@ -91,7 +69,7 @@ const Signin = () => {
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </div>
       </section>
-    </Layout>
+    </Layout >
   );
 };
 

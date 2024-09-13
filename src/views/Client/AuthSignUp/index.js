@@ -13,28 +13,6 @@ import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const navigate = useNavigate();
-
-  const register = useGoogleLogin({
-    onSuccess: (tokenResponse) => {
-      fetch("https://www.googleapis.com/oauth2/v2/userinfo", {
-        headers: new Headers({
-          Authorization: "Bearer " + tokenResponse.access_token,
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          localStorage.setItem("avatar", JSON.stringify(data.picture));
-          localStorage.setItem("name", JSON.stringify(data.name));
-          localStorage.setItem("email", JSON.stringify(data.email));
-          if (data) {
-            setTimeout(() => {
-              navigate("/profile");
-            }, 500);
-          }
-        });
-    },
-  });
-
   return (
     <Layout>
       <InnerBanner
@@ -44,7 +22,7 @@ const Signup = () => {
       <section className="login-detail">
         <div className="white-box overlay-banner">
           <div className="buttons-auth">
-            <button onClick={() => register()} className="btn outline-btn">
+            <button onClick={() => {alert("Please download the app and then sign up through the app")}} className="btn outline-btn">
               <Image src={GoogleIcon} alt="Google" />
               Sign up with Google
             </button>
@@ -52,8 +30,7 @@ const Signup = () => {
             <button
               className="btn outline-btn"
               type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              onClick={() => {alert("Please download the app and then sign up through the app")}}
             >
               <Image src={IosIcon} alt="Google" />
               Login with Apple
