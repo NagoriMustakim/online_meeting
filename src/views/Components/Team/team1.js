@@ -9,7 +9,7 @@ const Team1 = () => {
     <>
       <div className="team-block">
         <div className="profile-image">
-          <Image src={teamA} alt="ZataHub Team" />
+          <Image src={teamA} alt="ZohaTub Team" />
           <Link to="https://www.linkedin.com/in/jeanbaptistehironde" target="_blank">
             <svg
               width="32"

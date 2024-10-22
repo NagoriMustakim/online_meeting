@@ -9,7 +9,7 @@ const Team3 = () => {
     <>
       <div className="team-block">
         <div className="profile-image">
-          <Image src={team1} alt="ZataHub Team" />
+          <Image src={team1} alt="ZohaTub Team" />
           <Link to="https://www.linkedin.com/in/john-miller-a20885226" target="_blank">
             <svg
               width="32"

@@ -57,7 +57,7 @@ const DefaultHeader = () => {
         <div className="container">
           <nav>
             <Link to="/" className="logo">
-              <Image src={Logo} alt="ZataHub" />
+              <Image src={Logo} alt="ZohaTub" />
             </Link>
 
             <button

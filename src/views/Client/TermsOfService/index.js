@@ -19,7 +19,7 @@ const TermsOfService = () => {
               <li>
                 <h3>Acceptance of Terms</h3>
                 <p className="privacy-policy-introduction">
-                  By using ZATAHUB, a Virtual Meeting Platform For Online
+                  By using ZohaTub, a Virtual Meeting Platform For Online
                   Conference Video, you agree to comply with these Terms of
                   Service.
                 </p>

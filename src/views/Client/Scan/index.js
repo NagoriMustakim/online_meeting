@@ -82,7 +82,7 @@ const Scan = () => {
           </form>
 
           <p>
-            All meetings at ZataHub will be summary by Chat GPT 4.0 and publish
+            All meetings at ZohaTub will be summary by Chat GPT 4.0 and publish
             to Harmony main net.
           </p>
         </div>

@@ -24,7 +24,7 @@ const AboutUs = () => {
           <Row>
             <Col md="6">
               <div className="section-title">
-                <div className="small-title">Zatahub</div>
+                <div className="small-title">ZohaTub</div>
                 <h2>
                   Welcome to our virtual meeting platform for online gatherings!
                 </h2>
@@ -70,7 +70,7 @@ const AboutUs = () => {
           <Row className="align-items-center">
             <Col lg="4" md="12">
               <div className="section-title">
-                <div className="small-title">ZataHub Team</div>
+                <div className="small-title">ZohaTub Team</div>
                 <h2>We care with leadership</h2>
                 <Link to="/" className="btn outline-btn">
                   View All Team
