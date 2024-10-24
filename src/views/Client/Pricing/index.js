@@ -44,15 +44,15 @@ const Pricing = () => {
     <Layout>
       <InnerBanner
         CustomClass="pricing-banner"
-        Title="Business, Financial, Technology <br /> and Healthcare"
+        Title="Business, Financial, Technology and Healthcare"
         SmallTitle="Plans & Pricing for"
       />
 
       <section className="repeat-section pricing-plan-section">
         <Container>
           <div className="section-title text-center">
-            <div className="small-title">Pricing</div>
-            <h2>Pricing Plans</h2>
+            {/* <div className="small-title">Pricing</div> */}
+            {/* <h2>Pricing Plans</h2> */}
             <p>
               First 30 days absolutely free for any plan, no credit card
               required to get started
