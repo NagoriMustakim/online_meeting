@@ -44,7 +44,7 @@ const LaunchMeeting = () => {
   }, [])
 
   const LaunchMeetingHandler = () => {
-    alert("ZohaTub is not yet installed on your computer.")
+    alert("TonMeet is not yet installed on your computer.")
   }
   return (
     <React.Fragment>
@@ -54,7 +54,7 @@ const LaunchMeeting = () => {
         <section className="launch-page pt-100">
           <div className="launch-meeting-section">
             <h2>
-              Once you installed <b>ZohaTub</b> client, click Launch Meeting
+              Once you installed <b>TonMeet</b> client, click Launch Meeting
               <span>
                 {" "}
                 and then enter id <b>{meetingId ?? "..."}</b>
@@ -66,7 +66,7 @@ const LaunchMeeting = () => {
             </Button>
 
             <div className="download-zata-card">
-              Don't have ZohaTub Client installed?
+              Don't have TonMeet Client installed?
               <Link to="/download" className="link-download-now mt-4">
                 Download Now
               </Link>

@@ -20,10 +20,10 @@ const PrivacyPolicy = () => {
               <li>
                 <h3>Introduction</h3>
                 <p className="privacy-policy-introduction">
-                  Welcome to ZohaTub, a Virtual Meeting Platform For Online
+                  Welcome to TonMeet, a Virtual Meeting Platform For Online
                   Conference Video. This Privacy Policy describes the personal
                   data we collect and/or process to provide products and
-                  services offered directly by ZohaTub Video Communications,
+                  services offered directly by TonMeet Video Communications,
                   Inc.
                 </p>
               </li>

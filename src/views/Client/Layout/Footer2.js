@@ -9,7 +9,7 @@ const Footer2 = () => {
       <footer className="footer-section">
         <Container>
           <div className="copyright-section">
-            Copyright &copy; {currentYear} ZohaTub Video Communications, Inc.{" "}
+            Copyright &copy; {currentYear} TonMeet Video Communications, Inc.{" "}
             <span>All rights reserved</span>
           </div>
         </Container>

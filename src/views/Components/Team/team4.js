@@ -9,7 +9,7 @@ const Team4 = () => {
     <>
       <div className="team-block">
         <div className="profile-image">
-          <Image src={teamd} alt="ZohaTub Team" />
+          <Image src={teamd} alt="TonMeet Team" />
           <Link to="https://www.linkedin.com/in/chlo%C3%A9-loir-de-vries-39686b54" target="_blank">
             <svg
               width="32"

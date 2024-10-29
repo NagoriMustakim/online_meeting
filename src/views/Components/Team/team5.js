@@ -8,7 +8,7 @@ const Team5 = () => {
     <>
       <div className="team-block">
         <div className="profile-image">
-          <Image src={teame} alt="ZohaTub Team" />
+          <Image src={teame} alt="TonMeet Team" />
           <Link to="https://www.linkedin.com/in/antonio-bergonzi" target="_blank">
             <svg
               width="32"

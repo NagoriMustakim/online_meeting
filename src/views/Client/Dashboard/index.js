@@ -51,7 +51,7 @@ const Dashboard = () => {
                   <p>
                     Replace formal video conferences with a tranquil,
                     user-centric solution seamlessly incorporated into your
-                    platform through <b>ZohaTub</b>
+                    platform through <b>TonMeet</b>
                   </p>
 
                   <Link to="/download" className="btn">

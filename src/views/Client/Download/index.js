@@ -37,11 +37,11 @@ const Download = () => {
 
   const getCommand = () => {
     if (os === 'windows') {
-      return "Invoke-WebRequest -Uri https://ZohaTub.io/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
+      return "Invoke-WebRequest -Uri https://TonMeet.io/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
     } else if (os === 'mac') {
-      return "curl -sSL -O https://ZohaTub.io/install.sh && sh install.sh";
+      return "curl -sSL -O https://TonMeet.io/install.sh && sh install.sh";
     } else if (os === 'linux') {
-      return "curl -sSL -O https://ZohaTub.io/install-linux.sh && bash install-linux.sh";
+      return "curl -sSL -O https://TonMeet.io/install-linux.sh && bash install-linux.sh";
     }
     return '';
   };
@@ -80,7 +80,7 @@ const Download = () => {
 
           <div className="copy_part">
             <div className="text-center">
-              <p>{`Quick install by copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your ${os === "windows" ? "Command Prompt" : os === "mac" ? "Terminal" : "Terminal"}, and start using ZohaTub!`}</p>
+              <p>{`Quick install by copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your ${os === "windows" ? "Command Prompt" : os === "mac" ? "Terminal" : "Terminal"}, and start using TonMeet!`}</p>
             </div>
             <div className="download-block cmd">
               <img src={copyLogo} alt="Copy" className="copy-logo" />
