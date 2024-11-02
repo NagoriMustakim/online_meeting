@@ -37,11 +37,11 @@ const Download = () => {
 
   const getCommand = () => {
     if (os === 'windows') {
-      return "Invoke-WebRequest -Uri https://TonMeet.io/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
+      return "Invoke-WebRequest -Uri https://tonmeet.com/install.bat -OutFile install.bat; Start-Process cmd.exe -ArgumentList '/c install.bat'";
     } else if (os === 'mac') {
-      return "curl -sSL -O https://TonMeet.io/install.sh && sh install.sh";
+      return "curl -sSL -O https://tonmeet.com/install.sh && sh install.sh";
     } else if (os === 'linux') {
-      return "curl -sSL -O https://TonMeet.io/install-linux.sh && bash install-linux.sh";
+      return "curl -sSL -O https://tonmeet.com/install-linux.sh && bash install-linux.sh";
     }
     return '';
   };
