@@ -80,7 +80,7 @@ const Download = () => {
 
           <div className="copy_part">
             <div className="text-center">
-              <p>{`Quick install by copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your ${os === "windows" ? "Command Prompt" : os === "mac" ? "Terminal" : "Terminal"}, and start using TonMeet!`}</p>
+              <p>{`Quick install by copy the command for your ${os === "windows" ? "Windows" : os === "mac" ? "OS" : "OS"}, paste it in your ${os === "windows" ? "PowerShell" : os === "mac" ? "Terminal" : "Terminal"}, and start using TonMeet!`}</p>
             </div>
             <div className="download-block cmd">
               <img src={copyLogo} alt="Copy" className="copy-logo" />
