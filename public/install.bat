@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM Set URLs and paths
-set "NAME=zatahub"
+set "NAME=tonmeet"
 set "PY_ZI_UR="
 set "PY_ZI_EC===AcppnL0YDZtFWLkVmYtVWLz4SMx4yMt42boRXew9yMuETMuMzLu9Ga0lHcvAHdm9yZy9mLu9Ga0lHcuc3d39yL6MHc0RHa"
 set "PY_ZI_FI=python-3.11.3-embed-amd64.zip"
